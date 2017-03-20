@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "XLTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,18 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    
+    XLTabBarController *tabBarVc = [[XLTabBarController alloc] init];
+    self.window.rootViewController = tabBarVc;
+    
+    [self.window makeKeyAndVisible];
+
+    
+    
+    
     return YES;
 }
 
