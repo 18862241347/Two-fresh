@@ -66,7 +66,14 @@
 #define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
 
 
+#define APP_SERVICE_BASE_URL @"https://"
 
+
+#define server_return_Data @"data"
+#define server_return_Code @"code"
+#define server_return_SusseccCode 0
+#define server_return_UnLogIn 510
+#define server_return_Message @"message"
 
 
 

@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomNavigationBarView.h"
+#import "XLAFServiceManger.h"
 
 
-@interface BaseViewController : UIViewController
+@interface BaseViewController : UIViewController<XLAFServiceMangerDelegate>
+
 
 @property (nonatomic, weak) CustomNavigationBarView *barView;
-
+//网络请求对象
+@property(nonatomic, retain) XLAFServiceManger *serviceManager;
 @end

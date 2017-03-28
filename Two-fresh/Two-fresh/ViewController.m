@@ -17,7 +17,7 @@
 - (void)initCustomNabBarView
 {
     
- 
+// wx.freshfresh.com
     
 }
 
@@ -30,6 +30,9 @@
     [super viewDidLoad];
 
    
+}
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
 }
 
 #pragma mark--
